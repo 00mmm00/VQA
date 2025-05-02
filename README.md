@@ -19,7 +19,7 @@ Chosen for its real-world relevance and alignment with the project’s accessibi
 1. Classification-Based VQA (PaliGemma-2 + Classifier)
 
     - Inspired by the "Less Is More" paper, this approach focuses on efficiency:
-    - Feature Extraction: Extracted features (shape: (1, 512)) using PaliGemma-2’s last hidden state, on VizWiz to extract robust features from image-question pairs.
+    - Feature Extraction: Extracted features using PaliGemma-2’s last hidden state, on VizWiz to extract robust features from image-question pairs.
     - Classifier Training: Trained a lightweight classifier (VQAClassifier: 512→256→6503) on the features.
     - Inference: New image-question pair → Extract features → Predict answer with classifier.
     - Advantages: Efficient, reliable predictions within a fixed vocabulary.
